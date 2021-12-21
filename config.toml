@@ -1,5 +1,5 @@
 
-baseURL = "cladonia.gitlab.io"
+baseURL = "cladonia.gitlab.io/kailarsen.net"
 
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'

@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: kailarsen.net/sitemap.xml
+Sitemap: cladonia.gitlab.io/sitemap.xml

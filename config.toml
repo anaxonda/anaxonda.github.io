@@ -1,5 +1,5 @@
 
-baseURL = "cladonia.gitlab.io/kailarsen.net"
+baseURL = "https://sites24.gitlab.io/mud"
 
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'

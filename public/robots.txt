@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: cladonia.gitlab.io/sitemap.xml
+Sitemap: https://sites24.gitlab.io/mud/sitemap.xml

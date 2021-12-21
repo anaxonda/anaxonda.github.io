@@ -1,5 +1,6 @@
 
-baseURL = "https://sites24.gitlab.io/mud"
+baseURL = "/"
+relativeURLS = true
 
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'

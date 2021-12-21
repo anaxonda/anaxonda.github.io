@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: kailarsen.net/sitemap.xml

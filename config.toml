@@ -22,7 +22,16 @@ ignoreErrors = ["error-disable-taxonomy"]
   tags = "/blog/:slug"
 
 [params]
-  # The "description" of your website. This is used in the meta data of your generated html.
+
+# staticman_api = "https://https://mud-comments.herokuapp.com/v3/entry/gitlab/cladonia/mud/main/comments" #Add staticman API URL to enable staticman comments
+# from https://gohugohq.com/howto/staticman-hugo-comment-system/
+[staticman]
+  endpoint = "https://https://mud-comments.herokuapp.com/v3/entry/"
+  username = "cladonia"
+  repository = "mud"
+  branch = "main"
+
+# The "description" of your website. This is used in the meta data of your generated html.
   description = "rambling around"
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.

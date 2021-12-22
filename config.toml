@@ -27,7 +27,7 @@ staticman_api = "https://mud-comments.herokuapp.com/v3/entry/gitlab/sites24/mud/
 # from https://gohugohq.com/howto/staticman-hugo-comment-system/
 [staticman]
   endpoint = "https://https://mud-comments.herokuapp.com/v3/entry/"
-  username = "cladonia"
+  username = "sites24"
   repository = "mud"
   branch = "main"
 

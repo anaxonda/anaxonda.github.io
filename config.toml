@@ -23,7 +23,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
 
-# staticman_api = "https://mud-comments.herokuapp.com/v3/entry/gitlab/cladonia/mud/main/comments" #Add staticman API URL to enable staticman comments
+staticman_api = "https://mud-comments.herokuapp.com/v3/entry/gitlab/cladonia/mud/main/comments" #Add staticman API URL to enable staticman comments
 # from https://gohugohq.com/howto/staticman-hugo-comment-system/
 [staticman]
   endpoint = "https://https://mud-comments.herokuapp.com/v3/entry/"

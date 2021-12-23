@@ -26,7 +26,7 @@
 
 <form method="POST" action="https://mud-comments.herokuapp.com/v3/entry/gitlab/sites24/mud/main/comments/">
     <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
-    <input type="hidden" name="options[entryId]" value="{{ .UniqueID }}">
+    <input type="hidden" name="options[entryId]" value="{{ .File.UniqueID }}">
     <input name="fields[name]" type="text" placeholder="Your name">
     <input name="fields[email]" type="email" placeholder="Your email address">
     <textarea name="fields[comment]" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>

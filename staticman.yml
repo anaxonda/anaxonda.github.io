@@ -3,7 +3,7 @@
 # For example, you can have one property to handle comment submission and
 # another one to handle posts.
 comments:
-  allowedFields: ["name", "email", "website", "comment"]
+  allowedFields: ["name", "email", "comment"]
   branch            : "main"
   commitMessage     : "New comment in {options.slug}"
   path: "data/comments/{options.slug}"

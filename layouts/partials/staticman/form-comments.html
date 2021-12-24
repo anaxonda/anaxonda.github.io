@@ -27,7 +27,7 @@
 <form method="POST" action="{{ .Site.Params.staticman_api }}">
     <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
     <input type="hidden" name="options[entryId]" value="{{ .File.UniqueID }}">
-    <input type="hidden" name="options[slug]" value="{{ .Permalink }}">
+    <input type="hidden" name="options[slug]" value="{{ replace .Permalink "/" "" }}">
     <input name="fields[name]" type="text" placeholder="Your name">
     <input name="fields[email]" type="email" placeholder="Your email address">
     <textarea name="fields[comment]" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>

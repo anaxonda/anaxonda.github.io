@@ -1,5 +1,6 @@
 ---
 title: "WELCOME BACK"
+slug: "welcome-back"
 date: 2018-06-20T21:54:41-05:00
 draft: false
 ---

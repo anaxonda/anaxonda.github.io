@@ -4,7 +4,7 @@
 
   <form class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_api }}">
       <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
-      <input type="hidden" name="options[redirectError]" value="kailarsen.net{{ .Permalink }}#post-error">
+      <input type="hidden" name="options[redirectError]" value="{{ .Permalink }}#post-error">
       <input type="hidden" name="options[entryId]" value="{{ .File.BaseFileName }}">
       <input type="hidden" name="options[slug]" value="{{ replace .RelPermalink "/" "" }}">
     <input type="hidden" name="options[origin]" value="{{ .Permalink }}">

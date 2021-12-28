@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.dialog:target {
+  display: block;
+}
+
 .post-comment-reply {
   background-color: #f7f9fa;
   border: 1px solid #c8d6dd;

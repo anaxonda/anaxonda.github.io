@@ -51,7 +51,7 @@
 
   <div id="post-submitted" class="dialog">
     <h3>Thank you</h3>
-    <p>Your post has been submitted and will be published once it has been approved.</p>
+    <p>Your comment has been submitted, it will not be immediately available. </p>
     {{ if (.Site.Params.githubPullURL) }}
       <p><a href="{{ .Site.Params.githubPullURL }}">Click here</a> to see the pull request you generated.</p>
     {{ end }}
@@ -60,7 +60,7 @@
 
   <div id="post-error" class="dialog">
     <h3>OOPS!</h3>
-    <p>Your post has not been submitted. Either you messed up, or the comments are broken</p>
+    <p>Your comment has not been submitted. Either you messed up, or the comments are broken</p>
     <p><a href="#" class="btn">Return to page</a></p>
   </div>
 

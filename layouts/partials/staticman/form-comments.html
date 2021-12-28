@@ -4,14 +4,12 @@
 
   <form class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_api }}">
       <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
-      <input type="hidden" name="options[redirectError]" value="{{ .Permalink }}#post-error">
+      <input type="hidden" name="options[redirectError]" value="kailarsen.net{{ .Permalink }}#post-error">
       <input type="hidden" name="options[entryId]" value="{{ .File.BaseFileName }}">
       <input type="hidden" name="options[slug]" value="{{ replace .RelPermalink "/" "" }}">
     <input type="hidden" name="options[origin]" value="{{ .Permalink }}">
     <input type="hidden" name="options[parent]" value="{{ .File.BaseFileName }}">
     <input type="hidden" name="fields[reply_to]" value="">
-    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ .Site.Params.recaptcha_siteKey }}">
-    <input type="hidden" name="options[reCaptcha][secret]" value="{{ .Site.Params.recaptcha_secret }}">
 
     <fieldset>
       <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name">
@@ -33,8 +31,6 @@
     </fieldset>
 
     <fieldset>
-        <!-- <div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_siteKey }}" data-callback="enableBtn"></div> -->
-
         <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
     </fieldset>
 

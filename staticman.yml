@@ -3,14 +3,14 @@
 # For example, you can have one property to handle comment submission and
 # another one to handle posts.
 comments:
-  allowedFields: ["name", "email", "comment"]
+  allowedFields: ["name", "email", "comment", "reply_to"]
   branch            : "main"
   commitMessage     : "New comment in {options.slug}"
   path: "data/comments/{options.slug}"
   filename          : "comment-{@timestamp}"
   format            : "yaml"
   moderation        : true
-  requiredFields    : ['name', 'email', 'comment']
+  requiredFields    : ['name',  'comment']
   transforms:
     email           : md5
   generatedFields:

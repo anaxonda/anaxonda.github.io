@@ -1,33 +1,39 @@
-  {{ $slug := replace .RelPermalink "/" "" }}
+{{ $slug := replace .RelPermalink "/" "" }}
 
-  {{ if .Site.Data.comments }}
-    {{ $comments := index $.Site.Data.comments $slug }}
-    {{ if $comments }}
-      {{ if gt (len $comments) 1  }}
-        <h3>{{ len $comments  }} {{ i18n "moreComment" }}</h3>
-      {{ else }}
-        <h3>{{ len $comments  }} {{ i18n "oneComment" }}</h3>
-      {{ end }}
-    {{ else }}
-      <h3>{{ i18n "noComment" }}</h3>
+{{/* Creating a slice holding your comments */}}
+{{ $globalComments := slice }}
+
+{{ $globalComments = index $.Site.Data.comments $slug }}
+
+
+<!-- {{ $globalComments }} -->
+
+
+
+{{/* Setting default to $pageComments */}}
+{{ $pageComments := false }}
+
+{{ with $globalComments }}
+{{/* Storing their number in $pageComments */}}
+{{ $pageComments = len . }}
+{{/* Ranging on your comments */}}
+{{ range . }}
+{{ if not .reply_to }}
+<blockquote>
+          <p>{{ .comment | markdownify }}</p>
+          <cite>
+            <strong>
+              <a href="#commentid-{{ ._id }}" title="Link to this comment">
+                {{ .name }}</strong><br>{{ dateFormat "02/01/2006" .date }}
+              </a>
+              <button id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')">Reply to {{ .name     }}</button>
+          </cite>
+</blockquote>
+{{ partial "comment-replies" (dict "entryId_parent" $slug "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name "context" .) }}
+{{ end }}
     {{ end }}
+{{end }}
 
-
-    {{ $.Scratch.Set "hasComments" 0 }}
-    {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
-      {{ if not .parent }}
-        {{ $.Scratch.Add "hasComments" 1 }}
-        <article id="comment-{{ $.Scratch.Get "hasComments" }}" class="static-comment">
-          <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=48">
-          {{ if .website }}
-          <h4 class="comment-author"><a rel="external nofollow" href="{{ .website }}">{{ .name }}</a></h4>
-          {{ else }}
-          <h4 class="comment-author">{{ .name }}</h4>
-          {{ end }}
-          <div class="comment-timestamp"><a href="#comment-{{ $.Scratch.Get "hasComments" }}" title="Permalink to this comment"><time datetime="{{ .date }}">{{ dateFormat (default (i18n "shortdateFormat") .Site.Params.dateformat) .date}}</time></a></div>
-          <div class="comment-content"><p>{{ .comment | markdownify }}</p></div>
-        </article>
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
+  {{ if not $pageComments }}
+        <p>Hey, be the first who comment this article.</p>
+        {{ end }}

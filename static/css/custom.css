@@ -16,9 +16,16 @@
   display: block;
 }
 
+.post-comment {
+  border-left: 1px solid #999;
+  padding: 10px;
+  margin-top: 10px;
+}
+
 .post-comment-reply {
-  background-color: #f7f9fa;
-  border: 1px solid #c8d6dd;
+
+
+  border-left: 1px solid #999;
   padding: 10px;
   margin-top: 10px;
   margin-left: 4em;

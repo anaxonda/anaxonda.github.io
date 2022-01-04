@@ -17,17 +17,16 @@
 }
 
 .post-comment {
+
   border-left: 1px solid #999;
   padding: 10px;
   margin-top: 10px;
 }
 
 .post-comment-reply {
-
-
   border-left: 1px solid #999;
   padding: 10px;
   margin-top: 10px;
-  margin-left: 4em;
+  margin-left: 2em;
   font-size: 16px;
 }

@@ -21,10 +21,10 @@
 {{ if not .reply_to }}
 <div id="commentid-{{ ._id }}" class="post-comment">
 
-  {{ .name }}•<span class="comment-link">
+  <span class="comment-name">{{ .name }}</span> •<span class="comment-link">
   <a href="#commentid-{{ ._id }}" title="Link to this comment"> <small>{{ dateFormat "02/01/2006" .date }}</small></a></span>
   <p>{{ .comment | markdownify }}</p>
-  <button id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')">Reply to {{ .name     }}</button>
+  <button id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}'); focusInput()">Reply to {{ .name     }}</button>
 </div>
 <hr>
 {{ partial "staticman/comment-replies" (dict "entryId_parent" $slug "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name "context" .) }}

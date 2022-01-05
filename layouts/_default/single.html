@@ -18,9 +18,8 @@
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
   <hr>
-  <h2>Comments</h2>
-  {{ .Permalink }}
-  {{ partial "staticman/form-comments" . }}
+  <h3>Comments</h3>
   {{ partial "staticman/show-comments" . }}
+  {{ partial "staticman/form-comments" . }}
 </p>
 {{ end }}

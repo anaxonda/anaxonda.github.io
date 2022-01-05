@@ -3,36 +3,28 @@
   <h3>Say something</h3>
 
   <form class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_api }}">
-      <input type="hidden" name="options[redirect]" value="https://kailarsen.net{{ .Permalink }}#post-submitted">
-      <input type="hidden" name="options[redirectError]" value="https://kailarsen.net{{ .Permalink }}#post-error">
-      <input type="hidden" name="options[entryId]" value="{{ .File.BaseFileName }}">
-      <input type="hidden" name="options[slug]" value="{{ replace .RelPermalink "/" "" }}">
+    <input type="hidden" name="options[redirect]" value="https://lrka.net{{ .Permalink }}#post-submitted">
+    <input type="hidden" name="options[redirectError]" value="https://lrka.net{{ .Permalink }}#post-error">
+    <input type="hidden" name="options[entryId]" value="{{ .File.BaseFileName }}">
+    <input type="hidden" name="options[slug]" value="{{ replace .RelPermalink "/" "" }}">
     <input type="hidden" name="options[origin]" value="{{ .Permalink }}">
     <input type="hidden" name="options[parent]" value="{{ .File.BaseFileName }}">
     <input type="hidden" name="fields[reply_to]" value="">
 
-    <fieldset>
-      <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name">
-    </fieldset>
 
-    <fieldset>
-      <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address (optional)">
-    </fieldset>
+    <textarea name="fields[comment]" class="post-comment-field" id="post-comment-field" placeholder="Your comment." rows="7"></textarea>
+    <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name" >
+    <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address (optional)">
 
-    <fieldset>
-      <textarea name="fields[comment]" class="post-comment-field" placeholder="Your comment." rows="10"></textarea>
-    </fieldset>
-
-    <fieldset>
-      <div class="notify-me">
+    <div class="notify-me">
         <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
         Send me an email when someone comments on this post.
       </div>
-    </fieldset>
 
-    <fieldset>
-        <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
-    </fieldset>
+
+<div class="submit-btn">
+        <input type="submit" class="submit-btn" value="Submit" id="submit_button">
+</div>
 
   </form>
 

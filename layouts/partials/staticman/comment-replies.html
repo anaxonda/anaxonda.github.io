@@ -1,10 +1,13 @@
 {{ range $index, $comments := (index $.SiteDataComments_parent $.entryId_parent ) }}
   {{ if eq .reply_to $.parentId }}
-    <div class="post-comment-reply">
-      <div class="post-comment-header">
-        <p class="post-comment-info"><strong>{{ .name }}</strong><br><i><small>In reply to {{ $.parentName }}</i><br>{{ dateFormat "Monday, Jan 2, 2006" .date }}</small></p>
-      </div>
-      {{ .comment | markdownify }}
-    </div>
+<div id="commentid-{{ ._id }}" class="post-comment-reply">
+      {{ .name }} •<span class="comment-link">
+  <a href="#commentid-{{ ._id }}" title="Link to this comment"> <small>{{ dateFormat "02/01/2006" .date }}</small></a>
+  <br><i><small>In reply to {{ $.parentName }}</i></small>
+      </span>
+
+      <p> {{ .comment | markdownify }}</p>
+      <button id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ $.parentId }}')">Reply to comment thread</button>
+</div>
     {{ end }}
     {{ end }}

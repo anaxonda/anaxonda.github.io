@@ -18,6 +18,12 @@ comments:
       type          : "date"
       options:
         format      : "iso8601"
+      reCaptcha:
+          enabled: true
+          siteKey: "6LczXPYdAAAAAEAEer0nLkIgi2H0clCHsSmnpBjb"
+          secret: "aexPNPHQmXz1fql+KOxmjY47aICMK3ucgXKpDlY93dW3lsAdIuir+U4Z1Hgu1PGsEC/5wK8t1+Pq84g+IMXQfIXnaQwGxznbSjij6L32P6H5e+cqdMEg6r70XvcOHqYi+mFjPMfltFgFS4TLVnlHDw/HbGihPIDLFPq7yutdgHCF46qf/6P9o4Hm0/k5/WGcC1IrMxzf3K/iSiOVkSB7i471WoeDomO+2paQZS8TGwe9LYC2G2JmPJKQk0JznSQzQ1qg2nlnkRp1gV9sKcmpdxdN5DS+nFa4qHfPDAK6d17+3jeLY/pgYd9R0uS8lu/8055C4hRcZFbV/TrSancx1Q=="
+
+
 # comments:
 #   # (*) REQUIRED
 #   #

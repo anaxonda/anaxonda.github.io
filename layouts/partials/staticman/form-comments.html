@@ -10,7 +10,8 @@
     <input type="hidden" name="options[origin]" value="{{ .Permalink }}">
     <input type="hidden" name="options[parent]" value="{{ .File.BaseFileName }}">
     <input type="hidden" name="fields[reply_to]" value="">
-
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ .Site.Params.recaptcha_siteKey }}">
+    <input type="hidden" name="options[reCaptcha][secret]" value="{{ .Site.Params.recaptcha_secret }}">
 
     <textarea name="fields[comment]" class="post-comment-field" id="post-comment-field" placeholder="Your comment." rows="7"></textarea>
     <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name" >
@@ -25,7 +26,12 @@
 <div class="submit-btn">
         <input type="submit" class="submit-btn" value="Submit" id="submit_button">
 </div>
+   <fieldset>
+     <div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_siteKey }}" data-callback="enableBtn"></div>
 
+     <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
+   </fieldset>
+   <script async src='https://www.google.com/recaptcha/api.js' ></script>
   </form>
 
   <!-- <script async src='https://www.google.com/recaptcha/api.js' ></script> -->

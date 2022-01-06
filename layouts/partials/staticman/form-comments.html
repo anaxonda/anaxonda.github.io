@@ -18,23 +18,22 @@
     <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address (optional)">
 
     <div class="notify-me">
-        <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
-        Send me an email when someone comments on this post.
-      </div>
-
+      <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
+      Send me an email when someone comments on this post.
+    </div>
+    <div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_siteKey }}" data-callback="enableBtn"></div>
 
 <div class="submit-btn">
         <input type="submit" class="submit-btn" value="Submit" id="submit_button">
 </div>
-   <fieldset>
-     <div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_siteKey }}" data-callback="enableBtn"></div>
 
-     <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
-   </fieldset>
-   <script async src='https://www.google.com/recaptcha/api.js' ></script>
+
+
+
   </form>
 
-  <!-- <script async src='https://www.google.com/recaptcha/api.js' ></script> -->
+  <script async src='https://www.google.com/recaptcha/api.js' ></script>
+
 
 
   <!-- <script type="text/javascript">

@@ -26,7 +26,7 @@
   <p>{{ .comment | markdownify }}</p>
   <button id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}'); focusInput()">Reply to {{ .name     }}</button>
 </div>
-<hr>
+<hr class="comment">
 {{ partial "staticman/comment-replies" (dict "entryId_parent" $slug "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name "context" .) }}
 {{ end }}
     {{ end }}

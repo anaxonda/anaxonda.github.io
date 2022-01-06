@@ -58,3 +58,7 @@
   background-color: #4CAF50; /* Green */
   color: white;
 }
+
+hr.comment {
+    border-top: 1px dotted red;
+}

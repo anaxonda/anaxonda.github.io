@@ -32,9 +32,8 @@ akismet:
  enabled: true
  author: "name"
  authorEmail: "email"
- # authorUrl: "website"
  content: "comment"
- type: "comment"
+
 
 
 # comments:

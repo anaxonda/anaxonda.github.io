@@ -2,20 +2,21 @@
 {{ $small := $image.Resize "480x webp" }}
 {{ $medium := $image.Resize "768x webp" }}
 {{ $big := $image.Resize "1024x webp" }}
+{{ $fallback := $image.Resize "768x" }}
 
 
 
 
-    {{- if .Get "link" -}}
-    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
-        {{- end }}
-        <img src="{{ $medium.RelPermalink }}"
-             {{- if or (.Get "alt") (.Get "caption") }}
-             alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
-             {{- end -}}
-             sizes="100vw"
-             srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1024w"
-        /> <!-- Closing img tag -->
+{{- if .Get "link" -}}
+<a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end }}
+    <img src="{{ $medium.RelPermalink }}" onerror="this.src='{{ $fallback }}';"
+         {{- if or (.Get "alt") (.Get "caption") }}
+         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+         {{- end -}}
+         sizes="100vw"
+         srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1024w"
+    /> <!-- Closing img tag -->
     {{- if .Get "link" }}</a>{{ end -}}
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
         <figcaption>

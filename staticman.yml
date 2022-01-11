@@ -33,7 +33,7 @@ akismet:
  author: "name"
  authorEmail: "email"
  content: "comment"
-
+type: "comment"
 
 
 # comments:

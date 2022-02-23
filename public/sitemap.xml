@@ -2,14 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sites24.gitlab.io/mud/</loc>
-    <lastmod>2018-06-20T21:54:41-05:00</lastmod>
-    <priority>0</priority>
+    <loc>/about/</loc>
+    <lastmod>2022-01-06T13:15:35-06:00</lastmod>
   </url><url>
-    <loc>https://sites24.gitlab.io/mud/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2018-06-20T21:54:41-05:00</lastmod>
   </url><url>
-    <loc>https://sites24.gitlab.io/mud/welcome-back/</loc>
+    <loc>/</loc>
+    <lastmod>2018-06-20T21:54:41-05:00</lastmod>
+  </url><url>
+    <loc>/welcome/</loc>
     <lastmod>2018-06-20T21:54:41-05:00</lastmod>
   </url>
 </urlset>

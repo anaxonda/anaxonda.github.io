@@ -1,7 +1,7 @@
 ---
 title: "Frontera"
 date: 2022-03-19T17:56:48Z
-draft: true
+draft: false
 ---
 
 San Diego, a city of noisy concrete freeways and some nice people. After some days of rain the sun shone so I embarked south.

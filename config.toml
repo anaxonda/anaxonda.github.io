@@ -3,7 +3,7 @@ baseURL = "/"
 relativeURLS = true
 
 #timeout limit
-timeout = "120s"
+timeout = "500s"
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'
 

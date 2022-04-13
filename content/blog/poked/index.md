@@ -8,7 +8,7 @@ date = "2022-04-03T16:44:26Z"
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
 tags = []
-draft = true
+draft = false
 +++
 
 Abalones, longosta. Here they are both sold almost exclusively to Chinese buyers. The abalone are harvested by a man in a wetsuit, breathing from a hose going to the surface.

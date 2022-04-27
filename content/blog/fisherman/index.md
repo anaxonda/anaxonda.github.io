@@ -8,7 +8,7 @@ date = "2022-04-03T22:46:32Z"
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
 tags = []
-draft = true
+draft = false
 +++
 
 In Bahía, a California weed farmer who's mothers' family was from my hometown, and two brothers of someone I went to high school with, also from my hometown. Seemingly crazy odds like this seem to happen quite often.

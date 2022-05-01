@@ -1,6 +1,6 @@
 +++
 title = "the other la paz" 
-date = "2022-04-03T22:46:32Z"
+date = "2022-04-25T22:46:32Z"
 
 # 
 

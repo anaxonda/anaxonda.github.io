@@ -46,4 +46,4 @@ And I became even more personal with the ground since my thermarest pad lost a w
 
 The priests and their enthusiastic Indian helpers aren't the only ones who have loved the oases of baja over history. Our mosquito friends brought dengue, malaria, and a new guy, [chikungunya](https://en.m.wikipedia.org/wiki/Chikungunya)
 
-{{< figure src="PXL_20220324_173755510.jpg" title="this sign says "Clean Patio, Dignified House. Have you cleaned yet? everyone together against the dengue" >}}
+{{< figure src="PXL_20220324_173755510.jpg" title="this sign says Clean Patio, Dignified House. Have you cleaned yet? everyone together against the dengue" >}}

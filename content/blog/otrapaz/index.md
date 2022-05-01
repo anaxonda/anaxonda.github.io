@@ -1,5 +1,6 @@
 +++
-title = "the other la paz" 2022-04-03T22:46:32Z"
+title = "the other la paz" 
+date = "2022-04-03T22:46:32Z"
 
 # 
 

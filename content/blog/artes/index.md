@@ -8,7 +8,7 @@ date = "2022-04-020T22:46:32Z"
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
 tags = []
-draft = true
+draft = false
 +++
 
 Time blurs, dates become meaningless. Days become puncated by invitations for tacos, beers, cafes, building fires morning and night. If lucky there is sometimes a fog, called a "brisa" (in other parts brisa means breeze, so it can be confusing) . But usually there is only that short wonderful period when the sun has not creeped over the hill again, that you are not roasting by the sun. A nice time in the tropics, when the birds come alive, a goat bellows in the distance, and the air is so cool. If we were smart we would be riding then, but alas, we are not smart. What better time could there be to sleep. And then there is a fire to watch and coffee to be drunk for hours. So by the time we leave the sweating time has begun again.

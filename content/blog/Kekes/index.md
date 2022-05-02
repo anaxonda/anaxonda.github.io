@@ -8,7 +8,7 @@ date = "2022-04-19T22:46:32Z"
 # description = "An optional description for SEO. If not provided, an automatically created summary will be used."
 
 tags = []
-draft = false
+draft = true
 +++
 
 One morning I saw a guy picking up garbage in the middle of nada. That's not something you see everyday in Mexico. He was a troquero, owned a trucking business with his brother. They ran out of hydraulic fluid so his brother had to drive to the nearest town to find some. He was picking up botes (cans) to redeem for scrap while he waited. Luckily there was no shortage as the most popular pastime is downing tecates and throwing the bote out the window. In baja cans (lata) are called bote, and bottle (botella) are called ballenon.

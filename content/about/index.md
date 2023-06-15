@@ -8,6 +8,7 @@ You can contact me with passenger pigeon, smoke signals, or
 
 ![](pic.png)
 
+If you want to get an email when a new post is published, then send an email to the above address with the word "subscribe" in the subject.
 
 
 

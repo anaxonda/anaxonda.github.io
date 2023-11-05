@@ -17,3 +17,13 @@ figcaption{
       padding: 2px;
       text-align: center;
     }
+figcaption{
+     font-style: italic;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: -10px;
+      font-weight:lighter;
+}
+>>>>>>> 00eec4fe69f088310f460b7ba81914ce0d6bdcff

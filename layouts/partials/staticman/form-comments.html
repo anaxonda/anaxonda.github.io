@@ -2,7 +2,8 @@
   <a id="comment-form"></a>
   <h4>Say something</h4>
 
-  <form class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_api }}">
+  <form autocomplete="off" class="post-new-comment" method="POST" action="{{ .Site.Params.staticman_api }}">
+    <input autocomplete="false" name="hidden" type="text" style="display:none;">
     <input type="hidden" name="options[redirect]" value="https://lrka.net{{ .Permalink }}#post-submitted">
     <input type="hidden" name="options[redirectError]" value="https://lrka.net{{ .Permalink }}#post-error">
     <input type="hidden" name="options[entryId]" value="{{ .File.BaseFileName }}">
@@ -16,6 +17,7 @@
     <textarea name="fields[comment]" class="post-comment-field" id="post-comment-field" placeholder="Your comment." rows="7"></textarea>
     <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name" >
     <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address (optional)">
+    <input name="fields[hp]" id="hp" type="text" placeholder="Your email address (optional)">
 
     <div class="notify-me">
       <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">

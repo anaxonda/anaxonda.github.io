@@ -25,7 +25,7 @@ comments:
   name: "lrka.net"
   # ...
   notifications:
-    enabled: false
+    enabled: true
     apiKey: "A4gUlJsu8fKK33WSfr8MQIRqUPhvbHUIzhoW1VtLYQ0UMA6mRk2wNLxJ91OKSYYK7q4xdiuV/j6FEORJ0owNKGWuyHxkjY913B41ud/5PmA+TXpOd3dgZIUWsurxSVMb7WDiegY/CRAK0xQDWeS4TRRd/9OTD7V7Gw7SgnFLihmHEDqJ7uM4E5vmdRMM6p+SIGSHwAffmT9KvvlAmfMCGE5OHIE/lZ++wSyxQE43RKStrIeQJPiCa7VBsE3YSCYKcDxbAA4MWF3renvQa3HvDI0domt0efPrWzLqAG/HxzWI8rhhBakw69b7Gp9LFL+puNOMavNotHv/k5pHgP4JNA=="
     domain: "cpjfSaVe2orVegzX0eZLv52SOfM1jU2dGP31KZ5yFMxDAI2j9cx9c9l0hKNBJow/0+qeQ/DJhGAVhGfn95LvA9ORvH+yFztEXrlQ529KpBDcqnzawBpmQiJOrnpVt6Spn0ukhB6JAfM6XIiOAueSgJU3fUCFju+5hSnSuQLoRgiyhVNTfOy2NK4Rh0wDENFB1KnVmHBvk+N+3LQXb77Rx1xoFB9Zqq1t0qrpGXPquCKgr5vgJiNx8b5BUb1XZKgR39ni4nsnUK1RPK84wKN3D6CZ7SexZ/759HuWMgSO4Uv2MQxrqqp/UlDYO1BAO00eNKNZq7+Dj0QJwFDtBcqSSg=="
 akismet:

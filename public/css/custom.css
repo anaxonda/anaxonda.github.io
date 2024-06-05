@@ -63,8 +63,11 @@ hr.comment {
     border-top: 1px dotted red;
 }
 
-figcaption{
-     font-style: italic;
-      padding: 1px;
-      text-align: center;
+<<<<<<< HEAD
+=======
+
+
+img{
+  margin-bottom: -10px;
 }
+

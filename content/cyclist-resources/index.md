@@ -20,11 +20,8 @@ Some useful resources and links for cycle touring.
 - [BeWelcome](https://www.bewelcome.org/) - quite big, mainly europe?
 - casa de ciclistas (see section)
 
-<<<<<<< HEAD
-The main hospex (hospitality exchange) networks of the past, couchsurfing and warmshowers, have sadly fallen under more and more corporate sway that is not necessarily aligned with the interests of the people in them. The great communities they fostered in the past have suffered as a result. Couchsurfing does not even allow viewing old accounts without paying (at least sometimes). Warmshowers, community and volunteer built since 1993 now has a corporate board since 2015 after the founder's retirement. This board has been siphoning donations to tech firms that have failed to improve the service, disabled the community built app, and censored discussion about warmshowers future. See [warmshowers.bike](warmshowers.bike). 
-=======
 The main hospex (hospitality exchange) networks of the past, couchsurfing and warmshowers, have sadly fallen under more and more corporate sway that is not nessecarily aligned with the interests of the people in them. The great communities they fostered in the past have suffered as a result. Couchsurfing does not even allow viewing old accounts without paying. Warmshowers, community and volunteer built since 1993 now has a corporate board since 2015 after the founder's retirement, and it has been making some questionable descisions. See  [warmshowers.bike](warmshowers.bike). 
->>>>>>> 7301aa74888ef7a7d10290297584b9280b771856
+
 
 There is a small effort to create a [federated](https://en.m.wikipedia.org/wiki/Federated_social_network) protocol to connect hosting exchange communities, and avoid having data trapped in one network. See their main webpage for their aims and philosophies: [http://openhospitality.network/](http://openhospitality.network/).
 

@@ -1,0 +1,29 @@
+magick.exe mogrify -resize 1024 *.jpg
+
+figcaption{
+     font-style: italic;
+      text-align: center;
+      font-size: 14px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: -10px;
+      font-weight:normal;
+}
+
+    figcaption {
+      /* background-color: black; */
+      color: white;
+      font-style: italic;
+      padding: 2px;
+      text-align: center;
+    }
+figcaption{
+     font-style: italic;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: -10px;
+      font-weight:lighter;
+}
+>>>>>>> 00eec4fe69f088310f460b7ba81914ce0d6bdcff

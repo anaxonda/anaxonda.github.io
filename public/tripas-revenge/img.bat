@@ -1,0 +1,1 @@
+magick.exe mogrify -resize 1024 *.jpg
